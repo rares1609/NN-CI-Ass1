@@ -6,6 +6,4 @@ def generate_feature_vectors(P, N):
     labels = np.random.binomial(1, 0.5, size = P)  # Generate P labels 
     dataframe = pd.DataFrame(feature_matrix)  # Convert to dataframe
     dataframe['Labels'] = labels  #  Append labels to dataframe
-    print(dataframe)
-
-
+    return dataframe
