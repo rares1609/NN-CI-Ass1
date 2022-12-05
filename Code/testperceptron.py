@@ -21,6 +21,8 @@ plt.scatter(large[:,0], large[:,1], color='red')
 plt.show()
 
 
+
+
 rbp = RBPerceptron(600, 0.1)
 trained_model = rbp.train(X, D)
 
