@@ -41,9 +41,9 @@ def step_function(sample):
 
 
 if __name__ == '__main__':
-    feature_matrix, labels = generate_data(100, 2)
-    print(feature_matrix.shape)
-    print(labels.shape)
+    feature_matrix, labels = generate_data(100, 5)
+    #print(feature_matrix.shape)
+    #print(labels.shape)
     theta, miss_l = train_perceptron(5, feature_matrix, labels, 0.5, 100)
     plot_decision_boundary(feature_matrix, theta)
 
